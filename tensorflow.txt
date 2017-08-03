@@ -1,0 +1,40 @@
+install python3.5+ 64bit:
+https://www.python.org/downloads/
+
+windows powershell install tensorflow (cpu):
+pip install tensorflow
+
+//////////////////////////////////if your graphics card support CUDA///////////////////////////////
+windows powershell install tensorflow (cpu):
+pip install tensorflow-gpu
+
+install visual studio 2015 professional:
+https://www.visualstudio.com/
+
+install cuda8 local:
+https://developer.nvidia.com/cuda-downloads
+cuda8 still can't support VS2017
+In VS installer, open Individual components tab and select VC++ 2015.3 v140 toolset under Compilers, build tools and runtimes
+Install .NET Framework 3.5 if you didn't have it installed. Open Classical Control Panel, go to Programs and features and press Turn Windows features on or off. Check .NET Framework 3.5 and press OK. 
+Go to the C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\visual_studio_integration\MSBuildExtensions folder in your extracted distribution, copy all the files and paste them to C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140\BuildCustomizations
+you will need to edit your Cuda projects to recognize NVidia's build tasks from Visual Studio 2017. Open your .vcxproj file in a text editor and find all occurrences of CUDA 8.0.props. Replace the macro at the beginning of the string with $(VCTargetsPath14) so that XML snippet would look as follows: 
+
+download cuDNN and copy the files to corresponding folders:
+https://developer.nvidia.com/rdp/cudnn-download
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+MNIST data download:
+sign in with google account:
+https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/g3doc/tutorials/mnist/
+download tar.gz file
+download input_data.py;
+https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist/input_data.py#3
+(or copy the file with line head and replace all '^[0-9]+ ' with '')
+web page:http://yann.lecun.com/exdb/mnist/
+
+eclipse install pydev plugin:
+Window->eclipse market->search py->install pydev
+create a pyDev project
+copy the input_data.py into the project
+create another .py file and import input_data module
+

@@ -38,3 +38,5 @@ create a pyDev project
 copy the input_data.py into the project
 create another .py file and import input_data module
 
+all current deprecated/renamed functions:
+https://www.tensorflow.org/install/migration

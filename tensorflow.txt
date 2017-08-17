@@ -5,7 +5,7 @@ windows powershell install tensorflow (cpu):
 pip install tensorflow
 
 //////////////////////////////////if your graphics card support CUDA///////////////////////////////
-windows powershell install tensorflow (cpu):
+windows powershell install tensorflow (gpu):
 pip install tensorflow-gpu
 
 install visual studio 2015 professional:

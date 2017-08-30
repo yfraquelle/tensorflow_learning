@@ -1,3 +1,5 @@
+# tutorial code here https://github.com/MorvanZhou/tutorials/tree/master/tensorflowTUT
+
 import tensorflow as tf
 
 matrix1 = tf.constant([3,3])

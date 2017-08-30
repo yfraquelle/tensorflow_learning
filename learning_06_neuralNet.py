@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 # 添加神经层的函数
-def add_layer(inputs,in_size,out_size,activation_function=None):# None means linear
+def add_layer(inputs,in_size,out_size,activation_function=None):# None 表示不做变换，为线性关系
     Weights=tf.Variable(tf.random_normal([in_size,out_size]))# in_size行，out_size列的矩阵
     biases=tf.Variable(tf.zeros([1,out_size])+0.1)# 向量，初始值最好不为0
     Wx_plus_b=tf.matmul(inputs,Weights)+biases#矩阵乘法加上偏移就是预测值
